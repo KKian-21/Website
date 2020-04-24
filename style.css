@@ -1,0 +1,188 @@
+  *{
+    font-family: Rubik,sans-serif;
+  }
+
+  #root{
+    background-color:#1c1c1c;
+    width:100%;
+    height:2000px;
+    left: 0px;
+    position: absolute;
+    top:0px;
+  }
+  .toolbox{
+    width:100%;
+    height:80px;
+    background-color: black;
+    z-index:1;
+
+  }
+  #box1{
+    color:white;
+    height:75px;
+    width:100px;
+    float:right;
+    right:300px;
+    position:absolute;
+    letter-spacing: 2px;
+  }
+  #box1:hover{
+    text-decoration: underline;
+  }
+  #box2{
+    color:white;
+    height:75px;
+    width:100px;
+    float:right;
+    right:214px;
+    position:absolute;
+    letter-spacing: 2px;
+  }
+  #box2:hover{
+    text-decoration: underline;
+  }
+  #box3{
+    color:white;
+    height:75px;
+    width:98px;
+    float:right;
+    right:93px;
+    position:absolute;
+    letter-spacing: 2px;
+  }
+  #box3:hover{
+    text-decoration: underline;
+  }
+  #box4{
+    color:white;
+    height:75px;
+    width:100px;
+    float:right;
+    right:0px;
+    position:absolute;
+    letter-spacing: 2px;
+  }
+  #start{
+    top:200px;
+    position:absolute;
+
+  }
+  #title{
+    color:#75e7ba;
+    margin-left:150px;
+  }
+  #startparagraph{
+    margin-left:135px;
+
+  }
+  #startButton{
+    height: 50px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #75e7ba;
+    position: absolute;
+    float: left;
+    top: 410px;
+    left: 150px;
+    border: none;
+    }
+    #startButton:hover{
+      background-color: #6cd4ab;
+
+    }
+    #pic1{
+      position:absolute;
+      left: 100px;
+      top:850px;
+    }
+    #pic1:hover{
+      border-radius: 5px;
+      border: solid white;
+      left:98px;
+    }
+    #sec1{
+      position:absolute;
+      left: 90px;
+      top:1230px;
+      padding: 15px;
+    }
+    #sec1:hover{
+      border: solid 2px #6cd4ab;
+      left: 88px;
+    }
+    #pic2{
+      position:absolute;
+      left: 500px;
+      top:850px;
+    }
+    #pic2:hover{
+      border-radius: 5px;
+      border: solid white;
+      left:498px;
+    }
+    #sec2{
+      position:absolute;
+      left: 490px;
+      top:1230px;
+      padding: 15px;
+    }
+    #sec2:hover{
+      border: solid 2px #6cd4ab;
+      left: 488px;
+    }
+
+    #pic3{
+      position:absolute;
+      right: 100px;
+      top:850px;
+    }
+    #pic3:hover{
+      border-radius: 5px;
+      border: solid white;
+      right: 98px;
+    }
+    #sec3{
+      position:absolute;
+      right: 100px;
+      top:1230px;
+      padding: 15px;
+    }
+    #sec3:hover{
+      border: solid 2px #6cd4ab;
+      right: 98px;
+    }
+
+    h2{
+      color:#75e7ba;
+    }
+    p{
+      color:white;
+    }
+
+    #txtbox{
+      border-style: solid;
+      /* border: 2px; */
+      border-color: white;
+      top: 1500px;
+      position:absolute;
+      height:200px;
+      width:45%;
+      margin-left: 27.5%;
+      margin-right: 27.5%;
+      }
+      #txtbox:hover{
+        border:6px solid white;
+        margin-left: 27.3%;
+        margin-right: 27.5%;
+        top:1497px;
+      }
+      #h2Down{
+        position: absolute;
+        top: 37px;
+        left:180px;
+      }
+      #pDown{
+        position: absolute;
+        top: 95px;
+        left:100px;
+      }

@@ -1,0 +1,95 @@
+<!doctype>
+<html>
+<head>
+  <title>JavaScript Quiz</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+      <body>
+
+        <div id="root">
+
+          <div class="toolbox">
+            <div id="box1">
+              <p id="tool">Home<p>
+            </div>
+            <div id="box2">
+              <p id="tool">Über mich<p>
+            </div>
+            <div id="box3">
+              <p id="tool">Kurse<p>
+            </div>
+            <div id="box4">
+              <p id="tool">Kontakt<p>
+            </div>
+            <img src="Ibra.jpg" width="100%" height="auto">
+
+            <div id="start">
+              <h1 id="title">Fussballakademie <br> Oberschwaben</h1>
+              <p id="startparagraph">Jeder einzelne muss persönlich Hürden überwinden.Wie <br>schnnell wir ins Ziel kommen, spielt dabei keine
+                große Rolle.<br> Wichtig ist nur, jeden Tag alles zu geben. Sei auch dabei!
+            </div>
+
+            <button id="startButton">Mehr lesen</button>
+
+
+            <img id="pic1" src="bild1.jpg" width="270px" height="360px">
+            <div id="sec1">
+              <h2>Meine Motivation</h2>
+              <p>Meine Arbeit ist meine Leidenschaft und ein<br> positiver Antrieb für jeden Tag.</p>
+            </div>
+
+            <img id="pic2" src="bild2.jpg" width="270px" height="360px">
+            <div id="sec2">
+              <h2>Meine Kunden</h2>
+              <p>Sind alle die ihre sportlichen Träume<br>verwirklichen wollen.</p>
+            </div>
+
+            <img id="pic3" src="bild3.jpg" width="270px" height="360px">
+            <div id="sec3">
+              <h2>Mein Projekt</h2>
+              <p>Mein primäres Ziel ist es meine Kunden<br> stetig zu verbessern und sie zu spitzen <br>Leistungen zu pushen.</p>
+            </div>
+
+
+            <div id="txtbox">
+              <h2 id="h2Down"> Was ich kann?</h2>
+              <p id="pDown">Alles was man trainert kann man irgendwann.
+            </div>
+
+          </div>
+
+        </div>
+        <script>
+
+          $( "#tool" )
+            .on( "mouseenter", function() {
+              $( this ).css({
+                "background-color": "yellow",
+                "font-weight": "bolder"
+              });
+            })
+            .on( "mouseleave", function() {
+              var styles = {
+                backgroundColor : "#ddd",
+                fontWeight: ""
+              };
+              $( this ).css( styles );
+            });
+
+
+
+
+
+
+
+
+        </script>
+      </body>
+
+    </html>
