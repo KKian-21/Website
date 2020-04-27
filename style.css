@@ -1,188 +1,190 @@
   *{
     font-family: Rubik,sans-serif;
+    margin: 0;
+    padding: 0;
   }
+  body::-webkit-scrollbar{
+    width: 0.4rem;
+  }
+  body::-webkit-scrollbar-track{
+    background: #1e1e24;
+  }
+  body::-webkit-scrollbar-thumb{
+    background: #75e7ba;
+  }
+
 
   #root{
     background-color:#1c1c1c;
     width:100%;
-    height:2000px;
+    height:2300px;
     left: 0px;
     position: absolute;
     top:0px;
   }
-  .toolbox{
-    width:100%;
-    height:80px;
-    background-color: black;
-    z-index:1;
+  section{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  nav{
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    position: relative;
+    margin-left: 10%;
+  }
+  ul{
+    margin-left: 50px;
 
   }
-  #box1{
-    color:white;
-    height:75px;
-    width:100px;
-    float:right;
-    right:300px;
-    position:absolute;
-    letter-spacing: 2px;
+  ul li{
+    list-style: none;
+    display: flex;
+    float:left;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 10vh;
   }
-  #box1:hover{
-    text-decoration: underline;
+  ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    color: #f5f5f5;
   }
-  #box2{
-    color:white;
-    height:75px;
-    width:100px;
-    float:right;
-    right:214px;
-    position:absolute;
-    letter-spacing: 2px;
-  }
-  #box2:hover{
-    text-decoration: underline;
-  }
-  #box3{
-    color:white;
-    height:75px;
-    width:98px;
-    float:right;
-    right:93px;
-    position:absolute;
-    letter-spacing: 2px;
-  }
-  #box3:hover{
-    text-decoration: underline;
-  }
-  #box4{
-    color:white;
-    height:75px;
-    width:100px;
-    float:right;
-    right:0px;
-    position:absolute;
-    letter-spacing: 2px;
+  ul li a:hover{
+    color:#75e7ba;
   }
   #start{
-    top:200px;
+    top:20vh;
     position:absolute;
 
   }
   #title{
     color:#75e7ba;
     margin-left:150px;
+    font-size: 2.5vw;
   }
   #startparagraph{
     margin-left:135px;
+    font-size: 1.5vw;
 
   }
   #startButton{
-    height: 50px;
-    width: 150px;
+    height: 3vw;
+    width: 7vw;
     border-radius: 8px;
     background-color: #75e7ba;
     position: absolute;
     float: left;
-    top: 410px;
+    margin-top: 5vh;
     left: 150px;
     border: none;
     }
     #startButton:hover{
       background-color: #6cd4ab;
+    }
+    #bigdiv{
+      position: absolute;
+      display: flex;
+      top: 65vw;
+      width: 100%;
+    }
+    #div1{
+      position: absolute;
+      float: left;
+      margin-left: 15%;
+    }
+    #div2{
+      position: absolute;
+      float: left;
+      margin-left: 45%;
 
     }
-    #pic1{
-      position:absolute;
-      left: 100px;
-      top:850px;
-    }
-    #pic1:hover{
-      border-radius: 5px;
-      border: solid white;
-      left:98px;
-    }
-    #sec1{
-      position:absolute;
-      left: 90px;
-      top:1230px;
-      padding: 15px;
-    }
-    #sec1:hover{
-      border: solid 2px #6cd4ab;
-      left: 88px;
-    }
-    #pic2{
-      position:absolute;
-      left: 500px;
-      top:850px;
-    }
-    #pic2:hover{
-      border-radius: 5px;
-      border: solid white;
-      left:498px;
-    }
-    #sec2{
-      position:absolute;
-      left: 490px;
-      top:1230px;
-      padding: 15px;
-    }
-    #sec2:hover{
-      border: solid 2px #6cd4ab;
-      left: 488px;
+    #div3{
+      position: absolute;
+      float: left;
+      margin-left: 75%;
     }
 
-    #pic3{
-      position:absolute;
-      right: 100px;
-      top:850px;
-    }
-    #pic3:hover{
-      border-radius: 5px;
-      border: solid white;
-      right: 98px;
-    }
-    #sec3{
-      position:absolute;
-      right: 100px;
-      top:1230px;
-      padding: 15px;
-    }
-    #sec3:hover{
-      border: solid 2px #6cd4ab;
-      right: 98px;
-    }
 
     h2{
       color:#75e7ba;
+      margin: 10px 0 10px 0;
     }
     p{
       color:white;
     }
+    @media screen and (max-width:1980px){
 
-    #txtbox{
-      border-style: solid;
-      /* border: 2px; */
-      border-color: white;
-      top: 1500px;
-      position:absolute;
-      height:200px;
-      width:45%;
-      margin-left: 27.5%;
-      margin-right: 27.5%;
+        .picture{
+          width: 360px;
+          height: 480px;
+        }
+        body{
+          overflow-x: hidden;
+        }
+        #div1{
+          margin-left: 10%;
+        }
+        #div2{
+          margin-left: 42%;
+        }
+        #div3{
+          margin-left: 72%;
+        }
       }
-      #txtbox:hover{
-        border:6px solid white;
-        margin-left: 27.3%;
-        margin-right: 27.5%;
-        top:1497px;
-      }
-      #h2Down{
-        position: absolute;
-        top: 37px;
-        left:180px;
-      }
-      #pDown{
-        position: absolute;
-        top: 95px;
-        left:100px;
-      }
+      @media screen and (max-width:1280px){
+
+          .picture{
+            width: 300px;
+            height: 400px;
+          }
+          body{
+            overflow-x: hidden;
+          }
+          #div1{
+            margin-left: 5%;
+          }
+          #div2{
+            margin-left: 38%;
+          }
+          #div3{
+            margin-left: 70%;
+          }
+        }
+        @media screen and (max-width:1025px){
+
+            .picture{
+              width: 210px;
+              height: 280px;
+            }
+            body{
+              overflow-x: hidden;
+            }
+            #div1{
+              margin-left: 5%;
+            }
+            #div2{
+              margin-left: 38%;
+            }
+            #div3{
+              margin-left: 70%;
+            }
+            ul{
+              margin-left: 10px;
+            }
+            ul li{
+              margin-left: 5vh;
+            }
+        }
+    #bigdivk{
+      position: absolute;
+      display: column;
+      width: 100%;
+      top: 15vw;
+    }
+    #navk{
+      background-color: #75e7ba;
+    }
