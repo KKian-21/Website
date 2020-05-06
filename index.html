@@ -1,0 +1,83 @@
+<!doctype>
+<html>
+<head>
+  <title>Website</title>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+      <body>
+
+        <div id="root">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="kurse.html">Kurse</a></li>
+              <li><a href="ueberuns.html">Über Uns</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+
+            </ul>
+          </nav>
+            <section>
+              <img src="Zlatan.png" id="home" width="100%" height="auto">
+              <div id="start">
+                <h1 id="title">Fussballakademie <br> Oberschwaben</h1>
+                <p id="startparagraph">Jeder einzelne muss persönlich Hürden überwinden.Wie <br>schnnell wir ins Ziel kommen, spielt dabei keine
+                  große Rolle.<br> Wichtig ist nur, jeden Tag alles zu geben. Sei auch dabei!
+                  <button id="startButton">Mehr lesen</button>
+                </div>
+            </section>
+            <main>
+              <div id="bigdiv">
+                <div id="div1">
+                  <img id="pic1" class="picture" src="bild1.jpg" width="400px" height="532px">
+                  <h2>Meine Motivation</h2>
+                  <p class="text">Meine Arbeit ist meine Leidenschaft<br>und ein positiver Antrieb für <br>jeden Tag.</p>
+                </div>
+
+
+                <div id="div2">
+                  <img id="pic2" class="picture" src="bild2.jpg" width="400px" height="532px">
+                  <h2>Meine Kunden</h2>
+                  <p class="text">Sind alle die ihre sportlichen Träume<br>verwirklichen wollen.</p>
+                </div>
+
+
+                <div id="div3">
+                  <img id="pic3" class="picture" src="bild3.jpg" width="400px" height="532px">
+                  <h2>Mein Projekt</h2>
+                  <p class="text">Mein primäres Ziel ist es meine Kunden<br> stetig zu verbessern und sie zu spitzen <br>Leistungen zu pushen.</p>
+                </div>
+              </div>
+
+
+              <div id="txtbox">
+                <h2 id="h2Down"> Was ich kann?</h2>
+                <p id="pDown">Alles was man trainert kann man irgendwann.
+              </div>
+
+            </div>
+
+          </div>
+        <script>
+
+            $( "#box4" )
+              .on( "mouseenter", function() {
+                $( this ).css({
+                  "text-decoration": "underline", });
+              })
+              .on( "mouseleave", function() {
+                $( this ).css({
+                  "font-size": "16px",
+                "text-decoration": "",
+                });
+              });
+
+        </script>
+      </body>
+
+    </html>
