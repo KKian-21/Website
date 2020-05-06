@@ -3,13 +3,16 @@
     margin: 0;
     padding: 0;
   }
+  body{
+    overflow-x: hidden;
+  }
   body::-webkit-scrollbar{
     width: 0.4rem;
   }
   body::-webkit-scrollbar-track{
     background: #1e1e24;
-  }
-  body::-webkit-scrollbar-thumb{
+  } 
+   body::-webkit-scrollbar-thumb{
     background: #75e7ba;
   }
 
@@ -19,8 +22,9 @@
     width:100%;
     height:2300px;
     left: 0px;
-    position: absolute;
+    position: relative;
     top:0px;
+
   }
   section{
     top: 0;
@@ -59,7 +63,6 @@
   #start{
     top:20vh;
     position:absolute;
-
   }
   #title{
     color:#75e7ba;
@@ -69,10 +72,9 @@
   #startparagraph{
     margin-left:135px;
     font-size: 1.5vw;
-
   }
   #startButton{
-    height: 3vw;
+    height: 4vw;
     width: 7vw;
     border-radius: 8px;
     background-color: #75e7ba;
@@ -178,13 +180,113 @@
             ul li{
               margin-left: 5vh;
             }
+            .text{
+              font-size: smaller;
+            }
+            #startButton{
+              height: 50px;
+              width: 100px;
+              margin-top: 2.5vh;
+              }
+            #startparagraph{
+                margin: 15px 0 25px 137px;
+                font-size: 1.4vw;
+              }
         }
-    #bigdivk{
-      position: absolute;
-      display: column;
-      width: 100%;
-      top: 15vw;
-    }
-    #navk{
-      background-color: #75e7ba;
-    }
+        @media screen and (max-width:800px){
+
+          .picture{
+            width: 150px;
+            height: 200px;
+          }
+          body{
+            overflow-x: hidden;
+          }
+          #div1{
+            margin-left: 5%;
+          }
+          #div2{
+            margin-left: 38%;
+          }
+          #div3{
+            margin-left: 70%;
+          }
+          ul{
+            margin-left: 10px;
+          }
+          ul li{
+            margin-left: 5vh;
+          }
+          #start{
+            top:8vh;
+          }
+          #title{
+            font-size: 4vw;
+            margin-left: 75px;
+          }
+          #startparagraph{
+            margin: 15px 0 25px 75px;
+            font-size: 2vw;
+          }
+          #startButton{
+            height: 50px;
+            width: 100px;
+            margin-top: 3vh;
+            margin-left: 0px;
+          }
+        }
+          
+          @media screen and (max-width:420px){
+
+            .picture{
+              width: 150px;
+              height: 200px;
+            }
+            body{
+              overflow-x: hidden;
+            }
+            ul{
+              margin-left: 10px;
+            }
+            ul li a{
+              font-size: 12px;             
+            }
+             ul li{
+              margin-top: 10px;
+              margin-left: 25px;
+            }
+            #start{
+              top:6vh;
+            }
+            #title{
+              font-size: 4vw;
+              margin-left: 75px;
+            }
+            #startparagraph{
+              margin: 15px 0 25px 75px;
+              font-size: 2vw;
+            }
+            #startButton{
+              height: 50px;
+              width: 100px;
+              margin-top: 2.5vh;
+              margin-left: 0px;
+            }          
+            nav{
+              margin-left: 5px;
+            }            
+            #div1{
+              margin-left: 30%;
+            }
+            #div2{
+              top: 350px;
+              margin-left: 30%;
+            }
+            #div3{
+              top: 630px;
+              margin-left: 30%;
+              
+            }
+
+        }
+    
