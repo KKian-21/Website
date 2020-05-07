@@ -8,20 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+
 
     </head>
       <body>
 
         <div id="root">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
+          <nav id="navbig">
+            <ul id="ul">
+              <li ><a href="index.html">Home</a></li>
               <li><a href="kurse.html">Kurse</a></li>
               <li><a href="ueberuns.html">Über Uns</a></li>
               <li><a href="kontakt.html">Kontakt</a></li>
-
             </ul>
           </nav>
+          
+          <nav id="navmobile" >
+            <ul class="nav-links" >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Kurse</a></li>
+              <li><a href="#">Über Uns</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+          
             <section>
               <img src="zlatan-small2.png" id="homeSmall" width="100%" height="auto">
               <img src="Zlatan.png" id="home" width="100%" height="auto">
@@ -66,6 +82,7 @@
             </div>
 
           </div>
+          <script src="application.js"></script>
         <script>
 
             $( "#box4" )

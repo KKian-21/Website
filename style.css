@@ -35,14 +35,15 @@
     width: 100%;
     z-index: 0;
   }
-  nav{
+  #navbig{
     width: 100%;
     height: 100px;
     z-index: 1;
     position: relative;
     margin-left: 10%;
   }
-  ul{
+  /* Navigation Styles normal */
+  #ul{
     margin-left: 50px;
 
   }
@@ -63,6 +64,50 @@
   ul li a:hover{
     color:#75e7ba;
   }
+  /* Navigation Styles mobile */
+  #navmobile{
+    display: hidden;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #75e7ba;
+    width: 100%;
+  }
+  .logo{
+    color:#e3e0e0;
+    font-size: 30px;
+  }
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 30px;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links a{
+    color:#e3e0e0;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size:24px;
+  }
+  .burger{
+    display: none;
+    float: right;
+  }
+  .burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color:#e3e0e0;
+    transition: all 0.3s ease;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Home text */
   #start{
     top:20vh;
     position:absolute;
@@ -79,7 +124,7 @@
   }
   #startButton{
     height: 4vw;
-    width: 7vw;
+    width: 15vw;
     border-radius: 8px;
     background-color: #75e7ba;
     position: absolute;
@@ -123,7 +168,7 @@
     #txtbox{
       border: #f5f5f5 solid 4px;
       position: relative;
-      top: 92vw;
+      top: 85vw;
       margin-left: 35%;
       width: 30%;
       height: 10vw;      
@@ -156,14 +201,14 @@
         #div3{
           margin-left: 72%;
         }
-        #txtbox{
-          top: 100vw;      
-        }
+        /* #txtbox{
+          top: 90vw;      
+        } */
       }
       @media screen and (max-width:1600px){
 
         #txtbox{
-          top: 106vw;
+          top: 89vw;
           margin-left: 30%;
           width: 40%;
           height: 15vw;
@@ -188,7 +233,7 @@
             margin-left: 70%;
           }
           #txtbox{
-            top: 113vw;      
+            top: 87vw;      
           }
 
         }
@@ -200,6 +245,9 @@
             }
             body{
               overflow-x: hidden;
+            }
+            #bigdiv{
+              top: 75vw;
             }
             #div1{
               margin-left: 5%;
@@ -221,15 +269,16 @@
             }
             #startButton{
               height: 50px;
-              width: 100px;
-              margin-top: 2.5vh;
+              width: 180px;
+              margin-top: 7vh;
+              font-size: smaller;
             }
             #startparagraph{
                 margin: 15px 0 25px 137px;
                 font-size: 1.4vw;
            }
            #txtbox{
-            top: 105vw;      
+            top: 88vw;      
           }
         }
         @media screen and (max-width:800px){
@@ -257,15 +306,15 @@
             margin-left: 5vh;
           }
           #start{
-            top:8vh;
+            top:15vh;
           }
           #title{
-            font-size: 4vw;
+            font-size: 3vw;
             margin-left: 75px;
           }
           #startparagraph{
             margin: 15px 0 25px 75px;
-            font-size: 2vw;
+            font-size: 1.5vw;
           }
           #startButton{
             height: 50px;
@@ -274,19 +323,19 @@
             margin-left: 0px;
           } 
           #txtbox{
-            top: 100vw;           
+            top: 85vw;           
             margin-left: 25%;
             width: 50%;
             height: 20vw;
           }
-          #txtboxchild{
+          /* #txtboxchild{
             margin-top: 2vw;
-          }
+          } */
         }
           @media screen and (max-width:420px){
 
             #root{
-              height: 3500px;
+              height: 2500px;
             }
             #homeSmall{
               display: block;
@@ -301,16 +350,6 @@
             body{
               overflow-x: hidden;
             }
-            ul{
-              margin-left: 10px;
-            }
-            ul li a{
-              font-size: 12px;
-            }
-             ul li{
-              margin-top: 10px;
-              margin-left: 25px;
-            }
             #start{
               top:47vh;
             }
@@ -324,14 +363,12 @@
             }
             #startButton{
               height: 30px;
-              width: 85px;
+              width: 100px;
               margin-top: 4vh;
               margin-left: -100px;
               font-size: smaller;
             }
-            nav{
-              margin-left: 5px;
-            }
+            
             #div1{
               top: 630px;
               margin-left: 30%;
@@ -345,13 +382,74 @@
               margin-left: 30%;
             }
             #txtbox{
-              top: 1745px;           
-              margin-left: 15%;
-              width: 70%;
-              height: 23vw;
+              top: 1845px;           
+              margin-left: 12.5%;
+              width: 75%;
+              height: 25vw;
             }
-            #pDown{              
-              margin: 5px 3px 0 3px;
-              font-size: smaller;              
+            #txtboxchild{
+              margin-top: 4px;             
             }
-        }
+            #pDown{
+              
+              margin-top: 2px;
+            }
+            /* Navigation Styles mobile 420px */
+            #navbig{
+              opacity: 0;
+            }
+            #navmobile{
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 3;                
+              
+            }
+            .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 96vh;
+            top:14px;
+            background-color: #75e7ba;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            width: 60%;
+            transform: translateX(125%);
+            transition: transform 0.5s ease-in;
+            
+            }
+            .nav-links li{
+              opacity: 0;
+            }
+            .burger{
+              display: block;
+              margin: 13px;
+            }
+          }
+  .nav-active{
+    transform: translateX(25%);
+   }  
+
+@keyframes navLinkFade{
+  from{
+    opacity:0;
+    transform:translateX(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+    }
+}
+
+  .toggle.line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle.line2{
+    opacity: 0;
+  }
+  .toggle.line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+  }
+          
