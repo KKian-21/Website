@@ -124,7 +124,7 @@
   }
   #startButton{
     height: 4vw;
-    width: 7vw;
+    width: 15vw;
     border-radius: 8px;
     background-color: #75e7ba;
     position: absolute;
@@ -269,7 +269,7 @@
             }
             #startButton{
               height: 50px;
-              width: 100px;
+              width: 180px;
               margin-top: 7vh;
               font-size: smaller;
             }
@@ -363,7 +363,7 @@
             }
             #startButton{
               height: 30px;
-              width: 85px;
+              width: 100px;
               margin-top: 4vh;
               margin-left: -100px;
               font-size: smaller;
