@@ -1,7 +1,10 @@
-  *{
-    font-family: Rubik,sans-serif;
+  html,body{
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Rubik,sans-serif;
+
   }
   body{
     overflow-x: hidden;
@@ -15,35 +18,44 @@
    body::-webkit-scrollbar-thumb{
     background: #75e7ba;
   }
-
+ 
+  /* Responsive Background  */
+  .intro{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(//C:/Users/kianf/Documents/atom/Website/Zlatan1.png);
+    display: table;
+    top: 0;
+    background-size: cover;
+  }
 
   #root{
-    background-color:#0f0f11;
-    width:100%;
+    background-color:#000000;
     height:4000px;
     left: 0px;
-    position: relative;
     top:0px;
-
-  }
-  #homeSmall{
-    display: none;
-  }
-  section{
-    top: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-  }
-  #navbig{
-    width: 100%;
-    height: 100px;
-    z-index: 1;
-    position: relative;
-    margin-left: 10%;
-  }
+    z-index: -1;
+    }
+    #homeSmall{
+      display: none;
+    }
+    section{
+      top: 0;
+      position: absolute;
+      z-index: 0;
+    }
+    #navbig{
+      width: 100%;
+      height: 100px;
+      z-index: 1;
+      position: relative;
+      margin-left: 10%;
+    } 
+   
+ 
   /* Navigation Styles normal */
-  #ul{
+  ul{
     margin-left: 50px;
 
   }
@@ -69,7 +81,7 @@
     display: hidden;
     justify-content: space-around;
     align-items: center;
-    background-color: #75e7ba;
+    background-color: #000000;
     width: 100%;
   }
   .logo{
@@ -140,7 +152,7 @@
     #bigdiv{
       position: absolute;
       display: flex;
-      top: 65vw;
+      top: 63vw;
       width: 100%;
     }
     #div1{
@@ -168,7 +180,7 @@
     #txtbox{
       border: #f5f5f5 solid 4px;
       position: relative;
-      top: 85vw;
+      top: 80vw;
       margin-left: 35%;
       width: 30%;
       height: 10vw;      
@@ -193,17 +205,17 @@
           overflow-x: hidden;
         }
         #div1{
-          margin-left: 10%;
+          margin-left: 13%;
         }
         #div2{
-          margin-left: 42%;
+          margin-left: 39.5%;
         }
         #div3{
-          margin-left: 72%;
+          margin-left: 66%;
         }
-        /* #txtbox{
-          top: 90vw;      
-        } */
+        #txtbox{
+          top: 83vw;      
+        }
       }
       @media screen and (max-width:1600px){
 
@@ -232,10 +244,6 @@
           #div3{
             margin-left: 70%;
           }
-          #txtbox{
-            top: 87vw;      
-          }
-
         }
         @media screen and (max-width:1025px){
 
@@ -247,7 +255,7 @@
               overflow-x: hidden;
             }
             #bigdiv{
-              top: 75vw;
+              top: 85vw;
             }
             #div1{
               margin-left: 5%;
@@ -269,7 +277,7 @@
             }
             #startButton{
               height: 50px;
-              width: 180px;
+              width: 130px;
               margin-top: 7vh;
               font-size: smaller;
             }
@@ -278,26 +286,39 @@
                 font-size: 1.4vw;
            }
            #txtbox{
-            top: 88vw;      
+            top: 98vw;      
           }
         }
         @media screen and (max-width:800px){
 
+          .intro{
+            background: url(//C:/Users/kianf/Documents/atom/Website/Zlatan-small.png); 
+            background-repeat: no-repeat;
+            width: 100%;
+            
+              /* height: 800px;
+              background-size: 100% 100%; */
+                     
+          }
           .picture{
-            width: 150px;
-            height: 200px;
+            width: 300px;
+            height: 400px;
           }
           body{
             overflow-x: hidden;
           }
           #div1{
-            margin-left: 5%;
+            top: 660px;
+            margin-left: 32%;
           }
           #div2{
-            margin-left: 38%;
+            top: 1200px;
+            margin-left: 32%;
           }
           #div3{
-            margin-left: 70%;
+            top: 1730px;
+            margin-left: 32%;
+          
           }
           ul{
             margin-left: 10px;
@@ -306,24 +327,24 @@
             margin-left: 5vh;
           }
           #start{
-            top:15vh;
+            top:300px;
           }
           #title{
-            font-size: 3vw;
+            font-size: 8vw;
             margin-left: 75px;
           }
           #startparagraph{
             margin: 15px 0 25px 75px;
-            font-size: 1.5vw;
+            font-size: 2.5vw;
           }
           #startButton{
-            height: 50px;
-            width: 100px;
-            margin-top: 3vh;
+            height: 75px;
+            width: 300px;
+            margin-top: 15vw;
             margin-left: 0px;
           } 
           #txtbox{
-            top: 85vw;           
+            top: 2660px;           
             margin-left: 25%;
             width: 50%;
             height: 20vw;
@@ -336,6 +357,12 @@
 
             #root{
               height: 2500px;
+            }
+            .intro{
+              /* background: url(//C:/Users/kianf/Documents/atom/Website/zlatan-small2.png); 
+              background-repeat: no-repeat; */
+              
+                       
             }
             #homeSmall{
               display: block;
@@ -452,4 +479,4 @@
   .toggle.line3{
     transform: rotate(45deg) translate(-5px,-6px);
   }
-          
+           
