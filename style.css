@@ -24,7 +24,7 @@
     height: 100%;
     width: 100%;
     margin: auto;
-    background: url(//C:/Users/kianf/Documents/atom/Website/Zlatan1.png);
+    background: url(///C:/Users/kianf/Documents/atom/Website/Zlatan1.png);
     display: table;
     top: 0;
     background-size: cover;
@@ -89,7 +89,7 @@
     font-size: 30px;
   }
   .nav-links{
-    display: flex;
+    display: none;
     justify-content: space-around;
     width: 40%;
     margin: 30px;
@@ -152,7 +152,7 @@
     #bigdiv{
       position: absolute;
       display: flex;
-      top: 63vw;
+      top: 113vh;
       width: 100%;
     }
     #div1{
@@ -180,13 +180,13 @@
     #txtbox{
       border: #f5f5f5 solid 4px;
       position: relative;
-      top: 80vw;
+      top: 165vh;
       margin-left: 35%;
       width: 30%;
-      height: 10vw;      
+      height: 18vh;      
     }
     #txtboxchild{
-      margin-top: 4vw;
+      margin-top: 5vh;
     }
     #h2Down{
       text-align: center;
@@ -204,28 +204,12 @@
         body{
           overflow-x: hidden;
         }
-        #div1{
-          margin-left: 13%;
+        #bigdiv{
+          width: 95%;
         }
-        #div2{
-          margin-left: 39.5%;
-        }
-        #div3{
-          margin-left: 66%;
-        }
-        #txtbox{
-          top: 83vw;      
-        }
+        
       }
-      @media screen and (max-width:1600px){
-
-        #txtbox{
-          top: 89vw;
-          margin-left: 30%;
-          width: 40%;
-          height: 15vw;
-        }        
-      }
+      
       @media screen and (max-width:1280px){
 
           .picture{
@@ -235,14 +219,8 @@
           body{
             overflow-x: hidden;
           }
-          #div1{
-            margin-left: 5%;
-          }
-          #div2{
-            margin-left: 38%;
-          }
-          #div3{
-            margin-left: 70%;
+          #bigdiv{
+            left: -70px;
           }
         }
         @media screen and (max-width:1025px){
@@ -255,17 +233,9 @@
               overflow-x: hidden;
             }
             #bigdiv{
-              top: 85vw;
+              width: 90%;
             }
-            #div1{
-              margin-left: 5%;
-            }
-            #div2{
-              margin-left: 38%;
-            }
-            #div3{
-              margin-left: 70%;
-            }
+           
             ul{
               margin-left: 10px;
             }
@@ -285,9 +255,7 @@
                 margin: 15px 0 25px 137px;
                 font-size: 1.4vw;
            }
-           #txtbox{
-            top: 98vw;      
-          }
+           
         }
         @media screen and (max-width:800px){
 
@@ -308,20 +276,23 @@
             overflow-x: hidden;
           }
           #div1{
-            top: 660px;
-            margin-left: 32%;
+            top: 10vh;
+            margin-left: 42%;
           }
           #div2{
-            top: 1200px;
-            margin-left: 32%;
+            top: 62vh;
+            margin-left: 42%;
           }
           #div3{
-            top: 1730px;
-            margin-left: 32%;
+            top: 112vh;
+            margin-left: 42%;
           
           }
+          #navbig{
+            margin-left: 0;
+          }
           ul{
-            margin-left: 10px;
+            margin-left: 0px;
           }
           ul li{
             margin-left: 5vh;
@@ -344,23 +315,24 @@
             margin-left: 0px;
           } 
           #txtbox{
-            top: 2660px;           
-            margin-left: 25%;
-            width: 50%;
-            height: 20vw;
-          }
-          /* #txtboxchild{
-            margin-top: 2vw;
-          } */
+            top: 270vh;           
+            margin-left: 22%;
+            width: 60%;
+            height: 20vh;
+          }    
         }
+         
           @media screen and (max-width:420px){
 
             #root{
               height: 2500px;
             }
             .intro{
-              /* background: url(//C:/Users/kianf/Documents/atom/Website/zlatan-small2.png); 
-              background-repeat: no-repeat; */
+               background: url(//C:/Users/kianf/Documents/atom/Website/zlatannew.PNG); 
+              background-repeat: no-repeat; 
+              background-size: 100% 100%;
+              
+              
               
                        
             }
@@ -385,37 +357,31 @@
               margin-left: 55px;
             }
             #startparagraph{
-              margin: 15px 0 25px 60px;
+              margin: 0 0 25px 60px;
               font-size: 4vw;
             }
             #startButton{
               height: 30px;
               width: 100px;
-              margin-top: 4vh;
+              margin-top: 8vh;
               margin-left: -100px;
               font-size: smaller;
             }
             
             #div1{
-              top: 630px;
+              top: 550px;
               margin-left: 30%;
             }
             #div2{
-              top: 950px;
+              top: 870px;
               margin-left: 30%;
             }
             #div3{
-              top: 1250px;
+              top: 1170px;
               margin-left: 30%;
             }
             #txtbox{
-              top: 1845px;           
-              margin-left: 12.5%;
-              width: 75%;
-              height: 25vw;
-            }
-            #txtboxchild{
-              margin-top: 4px;             
+              display: none;  
             }
             #pDown{
               
@@ -423,14 +389,15 @@
             }
             /* Navigation Styles mobile 420px */
             #navbig{
-              opacity: 0;
+              display: none;
             }
             #navmobile{
               display: block;
-              position: absolute;
+              position: fixed;
               top: 0;
               right: 0;
-              z-index: 3;                
+              z-index: 3;     
+
               
             }
             .nav-links{
@@ -438,13 +405,14 @@
             right: 0px;
             height: 96vh;
             top:14px;
-            background-color: #75e7ba;
+            background-color: #010202;
             display: flex;
             flex-direction: column;
             /* align-items: center; */
-            width: 60%;
+            width: 120%;
             transform: translateX(125%);
             transition: transform 0.5s ease-in;
+            overflow-y: hidden;
             
             }
             .nav-links li{
@@ -455,6 +423,71 @@
               margin: 13px;
             }
           }
+
+/* Extra Styles Über Uns */
+  #überbig{
+    position: absolute;
+    top: 4em;
+  }
+   #überh2{
+    text-align: center;       
+   }
+   #überpic{
+     position: absolute;
+     margin-left: 15%;
+   }
+   #übertxt{
+    margin:2em 2em 4em 3em;
+   }
+    @media screen and (min-width:730px){
+      #überbig{
+        top: 15em;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        
+      }
+       #überh2{
+        text-align: center;       
+       }
+       #überpic{
+         position: absolute;
+         width: 35%;
+         margin-left: 60%;
+       }
+       #übertxt{
+        font-size:110%;
+    }
+  }
+  @media screen and (min-width:1024px){
+    #überpic{
+      width: 25%;
+
+    }
+  }
+  @media screen and (min-width:1500px){
+    #überpic{
+      width: 20%;
+    }
+  }
+  @media screen and (min-width:1920px){
+    #überpic{
+      width: 15%;
+      grid-template-columns: repeat(2,40%);
+    }
+  }
+      
+              
+
+
+
+
+
+
+
+
+
+
+
   .nav-active{
     transform: translateX(25%);
    }  
@@ -470,13 +503,12 @@
     }
 }
 
-  .toggle.line1{
+  .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
   }
-  .toggle.line2{
+  .toggle .line2{
     opacity: 0;
   }
-  .toggle.line3{
+  .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
   }
-           
