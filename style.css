@@ -56,7 +56,7 @@
  
   /* Navigation Styles normal */
   ul{
-    margin-left: 50px;
+    margin-left: 20vh;
 
   }
   ul li{
@@ -65,7 +65,7 @@
     float:left;
     height: 100px;
     margin-top: 30px;
-    margin-left: 10vh;
+    margin-left: 8vh;
   }
   ul li a{
     text-decoration: none;
@@ -467,16 +467,53 @@
   @media screen and (min-width:1500px){
     #überpic{
       width: 20%;
+      margin-left: 65%;
     }
   }
   @media screen and (min-width:1920px){
+    #überbig{
+      top: 20em;
+    }
     #überpic{
       width: 15%;
       grid-template-columns: repeat(2,40%);
     }
+    #übertxt{
+      font-size: x-large;
+    }
+    #überh2{
+      font-size: 250%;
+    }  
   }
-      
-              
+  #überbig,.inner{
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn{
+    from{
+      opacity: 0;
+      transform: translateY(-3em) ;
+
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0) ;
+
+    }
+  }
+  @keyframes fadePic{
+    from{
+      opacity: 0;
+      transform: translateY(-3em) ;
+
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0) ;
+
+    }
+  }
+
 
 
 
