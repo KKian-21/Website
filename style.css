@@ -180,7 +180,7 @@
     #txtbox{
       border: #f5f5f5 solid 4px;
       position: relative;
-      top: 165vh;
+      top: 180vh;
       margin-left: 35%;
       width: 30%;
       height: 18vh;      
@@ -221,6 +221,9 @@
           }
           #bigdiv{
             left: -70px;
+          }
+          #txtbox{
+            top: 183vh;
           }
         }
         @media screen and (max-width:1025px){
@@ -315,7 +318,7 @@
             margin-left: 0px;
           } 
           #txtbox{
-            top: 270vh;           
+            top: 280vh;           
             margin-left: 22%;
             width: 60%;
             height: 20vh;
@@ -367,18 +370,18 @@
               margin-left: -100px;
               font-size: smaller;
             }
+            #bigdiv{
+              top: 100vh;
+            }
             
-            #div1{
-              top: 550px;
-              margin-left: 30%;
+            #div1{              
+              margin-left: 53%;
             }
-            #div2{
-              top: 870px;
-              margin-left: 30%;
+            #div2{              
+              margin-left: 53%;
             }
-            #div3{
-              top: 1170px;
-              margin-left: 30%;
+            #div3{              
+              margin-left: 53%;
             }
             #txtbox{
               display: none;  
@@ -428,6 +431,7 @@
   #überbig{
     position: absolute;
     top: 4em;
+    z-index: 2;
   }
    #überh2{
     text-align: center;       
@@ -439,29 +443,51 @@
    #übertxt{
     margin:2em 2em 4em 3em;
    }
-    @media screen and (min-width:730px){
+   #überbkr{
+     position: absolute;
+     top: 5em;
+     right: -40em;
+     width: 150vh;
+     height: 150vh;
+     border-radius: 50%;
+     background-color: #7feec1;
+     z-index: 0;
+   }
+
+    @media screen and (min-width:430px){
+      #überbig{
+        position: absolute;
+        top: 14em;
+        z-index: 2;
+      }
+      #navbig{
+        position: absolute;
+        top: 0;
+      }
+      #überpic{
+        width: 40%;
+        margin-left: 30%;
+      }
+      
+    }
+
+    @media screen and (min-width:1024px){
+     
       #überbig{
         top: 15em;
         display: grid;
-        grid-template-columns: repeat(2,50%);
-        
+        grid-template-columns: repeat(2,50%); 
       }
        #überh2{
         text-align: center;       
        }
        #überpic{
          position: absolute;
-         width: 35%;
+         width: 25%;
          margin-left: 60%;
        }
        #übertxt{
         font-size:110%;
-    }
-  }
-  @media screen and (min-width:1024px){
-    #überpic{
-      width: 25%;
-
     }
   }
   @media screen and (min-width:1500px){
@@ -488,31 +514,31 @@
   #überbig,.inner{
     animation: fadeIn 2s forwards;
   }
+  #überbkr{
+    animation: fadeBkr 3s forwards;
+  }
   
   @keyframes fadeIn{
     from{
       opacity: 0;
       transform: translateY(-3em) ;
-
     }
     to{
       opacity: 1;
       transform: translateY(0) ;
-
     }
   }
-  @keyframes fadePic{
+  @keyframes fadeBkr{
     from{
-      opacity: 0;
-      transform: translateY(-3em) ;
-
+      opacity: 1;
+      transform: translateY(5em) ;
     }
     to{
-      opacity: 1;
+      opacity: 0.6;
       transform: translateY(0) ;
-
     }
   }
+  
 
 
 
