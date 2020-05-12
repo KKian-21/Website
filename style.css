@@ -1,7 +1,10 @@
-  *{
-    font-family: Rubik,sans-serif;
+  html,body{
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Rubik,sans-serif;
+
   }
   body{
     overflow-x: hidden;
@@ -15,36 +18,45 @@
    body::-webkit-scrollbar-thumb{
     background: #75e7ba;
   }
-
+ 
+  /* Responsive Background  */
+  .intro{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(///C:/Users/kianf/Documents/atom/Website/Zlatan1.png);
+    display: table;
+    top: 0;
+    background-size: cover;
+  }
 
   #root{
-    background-color:#0f0f11;
-    width:100%;
+    background-color:#000000;
     height:4000px;
     left: 0px;
-    position: relative;
     top:0px;
-
-  }
-  #homeSmall{
-    display: none;
-  }
-  section{
-    top: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-  }
-  #navbig{
-    width: 100%;
-    height: 100px;
-    z-index: 1;
-    position: relative;
-    margin-left: 10%;
-  }
+    z-index: -1;
+    }
+    #homeSmall{
+      display: none;
+    }
+    section{
+      top: 0;
+      position: absolute;
+      z-index: 0;
+    }
+    #navbig{
+      width: 100%;
+      height: 100px;
+      z-index: 1;
+      position: relative;
+      margin-left: 10%;
+    } 
+   
+ 
   /* Navigation Styles normal */
-  #ul{
-    margin-left: 50px;
+  ul{
+    margin-left: 20vh;
 
   }
   ul li{
@@ -53,7 +65,7 @@
     float:left;
     height: 100px;
     margin-top: 30px;
-    margin-left: 10vh;
+    margin-left: 8vh;
   }
   ul li a{
     text-decoration: none;
@@ -69,15 +81,16 @@
     display: hidden;
     justify-content: space-around;
     align-items: center;
-    background-color: #75e7ba;
+    background-color: #000000;
     width: 100%;
+    position: fixed;
   }
   .logo{
     color:#e3e0e0;
     font-size: 30px;
   }
   .nav-links{
-    display: flex;
+    display: none;
     justify-content: space-around;
     width: 40%;
     margin: 30px;
@@ -140,7 +153,7 @@
     #bigdiv{
       position: absolute;
       display: flex;
-      top: 65vw;
+      top: 113vh;
       width: 100%;
     }
     #div1{
@@ -168,13 +181,13 @@
     #txtbox{
       border: #f5f5f5 solid 4px;
       position: relative;
-      top: 85vw;
+      top: 180vh;
       margin-left: 35%;
       width: 30%;
-      height: 10vw;      
+      height: 18vh;      
     }
     #txtboxchild{
-      margin-top: 4vw;
+      margin-top: 5vh;
     }
     #h2Down{
       text-align: center;
@@ -192,28 +205,12 @@
         body{
           overflow-x: hidden;
         }
-        #div1{
-          margin-left: 10%;
+        #bigdiv{
+          width: 95%;
         }
-        #div2{
-          margin-left: 42%;
-        }
-        #div3{
-          margin-left: 72%;
-        }
-        /* #txtbox{
-          top: 90vw;      
-        } */
+        
       }
-      @media screen and (max-width:1600px){
-
-        #txtbox{
-          top: 89vw;
-          margin-left: 30%;
-          width: 40%;
-          height: 15vw;
-        }        
-      }
+      
       @media screen and (max-width:1280px){
 
           .picture{
@@ -223,19 +220,12 @@
           body{
             overflow-x: hidden;
           }
-          #div1{
-            margin-left: 5%;
-          }
-          #div2{
-            margin-left: 38%;
-          }
-          #div3{
-            margin-left: 70%;
+          #bigdiv{
+            left: -70px;
           }
           #txtbox{
-            top: 87vw;      
+            top: 183vh;
           }
-
         }
         @media screen and (max-width:1025px){
 
@@ -247,17 +237,9 @@
               overflow-x: hidden;
             }
             #bigdiv{
-              top: 75vw;
+              width: 90%;
             }
-            #div1{
-              margin-left: 5%;
-            }
-            #div2{
-              margin-left: 38%;
-            }
-            #div3{
-              margin-left: 70%;
-            }
+           
             ul{
               margin-left: 10px;
             }
@@ -269,7 +251,7 @@
             }
             #startButton{
               height: 50px;
-              width: 180px;
+              width: 130px;
               margin-top: 7vh;
               font-size: smaller;
             }
@@ -277,65 +259,83 @@
                 margin: 15px 0 25px 137px;
                 font-size: 1.4vw;
            }
-           #txtbox{
-            top: 88vw;      
-          }
+           
         }
         @media screen and (max-width:800px){
 
+          .intro{
+            background: url(//C:/Users/kianf/Documents/atom/Website/Zlatan-small.png); 
+            background-repeat: no-repeat;
+            width: 100%;
+            
+              /* height: 800px;
+              background-size: 100% 100%; */
+                     
+          }
           .picture{
-            width: 150px;
-            height: 200px;
+            width: 300px;
+            height: 400px;
           }
           body{
             overflow-x: hidden;
           }
           #div1{
-            margin-left: 5%;
+            top: 10vh;
+            margin-left: 42%;
           }
           #div2{
-            margin-left: 38%;
+            top: 62vh;
+            margin-left: 42%;
           }
           #div3{
-            margin-left: 70%;
+            top: 112vh;
+            margin-left: 42%;
+          
+          }
+          #navbig{
+            margin-left: 0;
           }
           ul{
-            margin-left: 10px;
+            margin-left: 0px;
           }
           ul li{
             margin-left: 5vh;
           }
           #start{
-            top:15vh;
+            top:300px;
           }
           #title{
-            font-size: 3vw;
+            font-size: 8vw;
             margin-left: 75px;
           }
           #startparagraph{
             margin: 15px 0 25px 75px;
-            font-size: 1.5vw;
+            font-size: 2.5vw;
           }
           #startButton{
-            height: 50px;
-            width: 100px;
-            margin-top: 3vh;
+            height: 75px;
+            width: 300px;
+            margin-top: 15vw;
             margin-left: 0px;
           } 
           #txtbox{
-            top: 85vw;           
-            margin-left: 25%;
-            width: 50%;
-            height: 20vw;
-          }
-          /* #txtboxchild{
-            margin-top: 2vw;
-          } */
+            top: 280vh;           
+            margin-left: 22%;
+            width: 60%;
+            height: 20vh;
+          }    
         }
+         
           @media screen and (max-width:420px){
 
             #root{
               height: 2500px;
+            }
+            .intro{
+               background: url(//C:/Users/kianf/Documents/atom/Website/zlatannew.PNG); 
+              background-repeat: no-repeat; 
+              background-size: 100% 100%;
+                       
             }
             #homeSmall{
               display: block;
@@ -358,37 +358,31 @@
               margin-left: 55px;
             }
             #startparagraph{
-              margin: 15px 0 25px 60px;
+              margin: 0 0 25px 60px;
               font-size: 4vw;
             }
             #startButton{
               height: 30px;
               width: 100px;
-              margin-top: 4vh;
+              margin-top: 8vh;
               margin-left: -100px;
               font-size: smaller;
             }
+            #bigdiv{
+              top: 100vh;
+            }
             
-            #div1{
-              top: 630px;
-              margin-left: 30%;
+            #div1{              
+              margin-left: 53%;
             }
-            #div2{
-              top: 950px;
-              margin-left: 30%;
+            #div2{              
+              margin-left: 53%;
             }
-            #div3{
-              top: 1250px;
-              margin-left: 30%;
+            #div3{              
+              margin-left: 53%;
             }
             #txtbox{
-              top: 1845px;           
-              margin-left: 12.5%;
-              width: 75%;
-              height: 25vw;
-            }
-            #txtboxchild{
-              margin-top: 4px;             
+              display: none;  
             }
             #pDown{
               
@@ -396,14 +390,15 @@
             }
             /* Navigation Styles mobile 420px */
             #navbig{
-              opacity: 0;
+              display: none;
             }
             #navmobile{
               display: block;
               position: absolute;
               top: 0;
               right: 0;
-              z-index: 3;                
+              z-index: 3;     
+
               
             }
             .nav-links{
@@ -411,13 +406,14 @@
             right: 0px;
             height: 96vh;
             top:14px;
-            background-color: #75e7ba;
+            background-color: #010202;
             display: flex;
             flex-direction: column;
             /* align-items: center; */
-            width: 60%;
+            width: 120%;
             transform: translateX(125%);
             transition: transform 0.5s ease-in;
+            overflow-y: hidden;
             
             }
             .nav-links li{
@@ -428,6 +424,175 @@
               margin: 13px;
             }
           }
+
+/* Extra Styles Über Uns 
+                          */
+  .überbig{
+    position: absolute;
+    top: 4em;
+    width: 100%;
+    z-index: 2;
+  }
+  .übersmall{
+    text-align: center;
+  }
+   #überh2{   
+    font-size: 180%;    
+   }
+    #übertxt{
+    position: relative;
+    font-size: smaller;
+    margin:2em 2em 4em 3em;
+    z-index: 2;
+   }
+   #überbkr{
+     position: absolute;
+     top: 5em;
+     right: -40em;
+     width: 150vh;
+     height: 150vh;
+     border-radius: 50%;
+     background-color: #7feec1;
+
+   }
+   #überpic{
+     position: relative;
+     z-index: 2;
+   }
+
+ 
+   /*   
+Styles kurse 
+Example for easy mobile skeleton with styles*/
+   .kurstop{
+     position: relative;
+     top: 4em;
+     width: 100%;
+     z-index: 2;
+   }
+   .kurstopcontent{
+     text-align: center;
+   }
+   #kurscontenth2{
+     font-size: 180%;
+   }
+   #kurscontenttxt{
+      font-size: smaller;
+      margin: 2em 2em 4em 3em;
+   }
+
+   #kursbottom{
+     display: block;
+   }
+
+
+    @media screen and (min-width:430px){
+      .überbig{
+        position: absolute;
+        top: 14em;
+      }
+      #navmobile{
+        position: absolute;
+        top: 0;
+      }
+      
+     
+      #überpic{
+        width: 40%;
+      }
+
+      .kurstop{
+        top: 14em;
+
+      }
+      
+    }
+
+    @media screen and (min-width:1024px){
+     
+      .überbig{
+        top: 15em;
+        display: grid;
+        grid-template-columns: repeat(2,50%); 
+      }
+       #überh2{
+        text-align: center;       
+       }
+       #überpic{
+         position: absolute;
+         width: 25%;
+         margin-left: 40%;
+       }
+       #übertxt{
+        font-size:110%;
+    }
+  }
+  @media screen and (min-width:1500px){
+    #überpic{
+      width: 20%;
+    }
+  }
+  @media screen and (min-width:1920px){
+    #überbig{
+      top: 20em;
+    }
+    #überpic{
+      width: 15%;
+      grid-template-columns: repeat(2,40%);
+      top: 15em;
+      margin-left: 45%;
+    }
+    #übertxt{
+      font-size: x-large;
+    }
+    #überh2{
+      font-size: 250%;
+    }  
+  }
+
+
+
+  .überbig,.inner{
+    animation: fadeIn 2s forwards;
+  }
+  #überbkr{
+    animation: fadeBkr 3s forwards;
+  }
+
+
+
+
+
+  @keyframes fadeIn{
+    from{
+      opacity: 0;
+      transform: translateY(-3em) ;
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0) ;
+    }
+  }
+  @keyframes fadeBkr{
+    from{
+      opacity: 1;
+      transform: translateY(5em) ;
+    }
+    to{
+      opacity: 0.8;
+      transform: translateY(0) ;
+    }
+  }
+
+
+
+
+
+
+
+
+/* 
+Styles burger */
   .nav-active{
     transform: translateX(25%);
    }  
@@ -443,13 +608,12 @@
     }
 }
 
-  .toggle.line1{
+  .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
   }
-  .toggle.line2{
+  .toggle .line2{
     opacity: 0;
   }
-  .toggle.line3{
+  .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
   }
-          

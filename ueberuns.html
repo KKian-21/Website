@@ -7,75 +7,58 @@
     <meta http-equiv="Content-type" content="text/html" charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="style.css">
-
     </head>
       <body>
 
         <div id="root">
-          <nav>
-            <ul>
+  
+          <nav id="navbig">
+            <ul id="ul">
+              <li ><a href="index.html">Home</a></li>
+              <li><a href="kurse.html">Kurse</a></li>
+              <li><a href="ueberuns.html">Über Uns</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+          
+          <nav id="navmobile" >
+            <ul class="nav-links" >
               <li><a href="index.html">Home</a></li>
               <li><a href="kurse.html">Kurse</a></li>
               <li><a href="ueberuns.html">Über Uns</a></li>
               <li><a href="kontakt.html">Kontakt</a></li>
-
             </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
           </nav>
-            <section>
-              <img src="zlatan_kit.jpg" width="100%" height="auto">
-              <div id="start">
-                <h1 id="title">Fussballakademie <br> Oberschwaben</h1>
-                <p id="startparagraph">Jeder einzelne muss persönlich Hürden überwinden.Wie <br>schnnell wir ins Ziel kommen, spielt dabei keine
-                  große Rolle.<br> Wichtig ist nur, jeden Tag alles zu geben. Sei auch dabei!
-                  <button id="startButton">Mehr lesen</button>
-                </div>
-            </section>
-            <main>
-              <div id="bigdiv">
-                <div id="div1">
-                  <img id="pic1" src="bild1.jpg" width="400px" height="532px">
-                  <h2>Meine Motivation</h2>
-                  <p>Meine Arbeit ist meine Leidenschaft und ein<br> positiver Antrieb für jeden Tag.</p>
-                </div>
-
-
-                <div id="div2">
-                  <img id="pic2" src="bild2.jpg" width="400px" height="532px">
-                  <h2>Meine Kunden</h2>
-                  <p>Sind alle die ihre sportlichen Träume<br>verwirklichen wollen.</p>
-                </div>
-
-
-                <div id="div3">
-                  <img id="pic3" src="bild3.jpg" width="400px" height="532px">
-                  <h2>Mein Projekt</h2>
-                  <p>Mein primäres Ziel ist es meine Kunden<br> stetig zu verbessern und sie zu spitzen <br>Leistungen zu pushen.</p>
-                </div>
+          <div class="überbig">
+            <div class="übersmall">            
+              <h2 id="überh2" >Über Uns</h2>
+              <p id="übertxt">
+                  Hallo, mein Name ist Nectad Fetic und ich bin der Organisator 
+                  und Kopf der Fussballschule. Ich spiele mein leben lang schon Fussball und 
+                  bin seit fast 20 Jahren bereits Trainer. Im Jahr 2018 habe ich erfolgreich meine
+                  UEFA Pro Lizenz abgeschlossen mit Prominenten Mitgliedern wie,
+                  Miroslav Klose, Sebastian Kehl, ......
+                  Als Trainer war ich in Vereinen wie dem FV Ravensburg (U23), 
+                  SC Pfullendorf (U19), SC Weingarten unteranderem tätig.             
+              </p>
+              <div>
+                <img src="Nec.jpg" id="überpic" width="70%" height="auto">
               </div>
+            <div id="überbgr">
+              <span id="überbkr"></span>
 
-
-              <div id="txtbox">
-                <h2 id="h2Down"> Was ich kann?</h2>
-                <p id="pDown">Alles was man trainert kann man irgendwann.
-              </div>
 
             </div>
-
-          </div>
+          
+          <script src="application.js"></script>
         <script>
-
-            $( "#box4" )
-              .on( "mouseenter", function() {
-                $( this ).css({
-                  "text-decoration": "underline", });
-              })
-              .on( "mouseleave", function() {
-                $( this ).css({
-                  "font-size": "16px",
-                "text-decoration": "",
-                });
-              });
 
         </script>
       </body>
