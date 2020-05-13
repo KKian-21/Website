@@ -36,6 +36,7 @@
     left: 0px;
     top:0px;
     z-index: -1;
+    position: relative;
     }
   
    
@@ -256,10 +257,10 @@ Example for easy mobile skeleton with styles*/
 
     #navmobile{
       display: block;
-      position: fixed;
       top: 0;
       right: 0;
-      z-index: 3;        
+      z-index: 3;    
+      position: fixed;    
       }
       .nav-links{
       position: absolute;
@@ -273,6 +274,7 @@ Example for easy mobile skeleton with styles*/
       transform: translateX(125%);
       transition: transform 0.5s ease-in;
       overflow-y: hidden;
+      z-index: 4;
       }
     .nav-links li{
       opacity: 0;
@@ -313,6 +315,7 @@ Example for easy mobile skeleton with styles*/
          position: absolute;
          width: 25%;
          margin-left: 40%;
+         top: 20em;
        }
        #übertxt{
         font-size:110%;
