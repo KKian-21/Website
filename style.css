@@ -7,72 +7,113 @@
   }
   html{
     overflow-x: hidden;
+    background-color: black;
   }
-  body::-webkit-scrollbar{
-    width: 0.4rem;
-  }
-  body::-webkit-scrollbar-track{
-    background: #1e1e24;
-  }
-   body::-webkit-scrollbar-thumb{
-    background: #75e7ba;
-  }
- 
-  /* Responsive Background  */
   .intro{
+    width: 100%;
     height: 100%;
-    width: 100%;
-    margin: auto;
+    position: relative;
     background: url(Zlatan1.png);
-    background-position: 51%,75%;
-    display: table;
-    top: 0;
     background-size: cover;
-  }
+    background-position: 51%, 75%;
 
-  #root{
-    background-color:#000000;
-    height:4000px;
-    left: 0px;
-    top:0px;
-    z-index: -1;
-    position: relative;
-    }
-  
-   
- 
-  /* Navigation Styles  */
-  #navbig{
-    width: 100%;
-    height: 100px;
-    z-index: 1;
-    position: relative;
-    margin-left: 10%;
-    display: none;
-  } 
-  ul{
-    margin-left: 20vh;
 
   }
-  ul li{
-    list-style: none;
-    display: flex;
-    float:left;
-    height: 100px;
-    margin-top: 30px;
-    margin-left: 8vh;
+  #start{
+    position: absolute;
+    top: 10em;
+    margin-left: 3em;
   }
-  ul li a{
-    text-decoration: none;
-    font-size: 24px;
-    display: block;
-    color: #f5f5f5;
-  }
-  ul li a:hover{
+  #start h1{
     color:#75e7ba;
+
   }
-  /* Navigation Styles mobile */
+  #start p{
+    color: #dfdbce;
+    margin: 1em 2em 1em -0.5em;
+  }
+  .inner button{
+    margin: 4em 0 0 4em;
+    background-color:#75e7ba;
+    border-radius: 8px;
+    border-style: none;
+    width: 8em;
+    height: 3em;
+    position: relative;
+    top: 22em;
+  }
+  .inner button:hover{
+    background-color: #6cd4ab;
+  }
+
+  /* Navigation Bar */
+  #navbig{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    right: 0;
+  }
+  #navbig ul{
+    display: flex;
+    margin-right: 7vw;
+    margin-top: 1vw;
+   
+  }
+  #navbig ul li{
+    list-style: none;
+    
+  }
+  #navbig ul li a{
+    text-decoration: none;
+    color: #dfdbcd;
+    margin-left: 5vw;
+    font-size: 150%;
+  }
+  #navbig ul li a:hover{
+    text-decoration: underline
+  }
   #navmobile{
+    display: none;
+  }
+
+  /* under Home */
+  #bigdiv{
+    text-align: center;
+    position: relative;
+    top:5em;
+  }
+  #bigdiv h2{
+    color: #75e7ba;
+    margin: 1em 1em;
+  }
+  #bigdiv p{
+    color: #dfdbcd;
+    margin-bottom: 3.5em;
+  }
+  #txtbox{
+    position: relative;
+    top: 15vh;
+    margin-left: 6%;
+    height: 20%;
+    width: 85%;
+    border: #f0f0f0 4px solid;
+    margin-bottom: 20px;   
+  }
+  #txtboxchild{
+    text-align: center;
+  }
+  #txtboxchild h2{
+    color: #75e7ba;
+    margin-top: 5vh;
+  }
+  #txtboxchild p{
+    color:#dfdbcd ;
+    margin: 7px 5px 0 5px;
+  }
+ 
+
+  /* Navigation Styles mobile */
+  /* #navmobile{
     display: hidden;
     justify-content: space-around;
     align-items: center;
@@ -106,92 +147,8 @@
     background-color:#e3e0e0;
     transition: all 0.3s ease;
   }
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Home text */
-  section{
-    top: 0;
-    position: absolute;
-    z-index: 0;
-  }
-  #start{
-    top:20vh;
-    position:absolute;
-  }
-  #title{
-    color:#75e7ba;
-    margin-left:150px;
-    font-size: 2.5vw;
-  }
-  #startparagraph{
-    margin-left:135px;
-    margin-top: 1vh;
-    font-size: 1.5vw;
-  }
-  #startButton{
-    height: 4vw;
-    width: 15vw;
-    border-radius: 8px;
-    background-color: #75e7ba;
-    position: absolute;
-    float: left;
-    margin-top: 10vh;
-    left: 150px;
-    border: none;
-    font-size: 20px;
-    }
-    #startButton:hover{
-      background-color: #6cd4ab;
-    }
-    #bigdiv{
-      position: absolute;
-      display: flex;
-      top: 113vh;
-      width: 100%;
-    }
-    #div1{
-      position: absolute;
-      float: left;
-      margin-left: 15%;
-    }
-    #div2{
-      position: absolute;
-      float: left;
-      margin-left: 45%;
-    }
-    #div3{
-      position: absolute;
-      float: left;
-      margin-left: 75%;
-    }
-    h2{
-      color:#75e7ba;
-      margin: 10px 0 10px 0;
-    }
-    p{
-      color:white;
-    }
-    #txtbox{
-      border: #f5f5f5 solid 4px;
-      position: relative;
-      top: 180vh;
-      margin-left: 35%;
-      width: 30%;
-      height: 18vh;      
-    }
-    #txtboxchild{
-      margin-top: 5vh;
-    }
-    #h2Down{
-      text-align: center;
-    }
-    #pDown{
-      text-align: center;
-      margin-top: 25px;
-    }
 
+  
 
 /* Extra Styles Über Uns 
                           */
@@ -205,13 +162,15 @@
     text-align: center;
   }
    #überh2{   
-    font-size: 180%;    
+    font-size: 180%;  
+    color: #75e7ba;   
    }
     #übertxt{
     position: relative;
     font-size: smaller;
     margin:2em 2em 4em 3em;
     z-index: 2;
+    color: #dad8d1;
    }
    #überbkr{
      position: absolute;
@@ -243,62 +202,69 @@ Example for easy mobile skeleton with styles*/
    }
    #kurscontenth2{
      font-size: 180%;
+     color: #75e7ba;
    }
    #kurscontenttxt{
       font-size: smaller;
       margin: 2em 2em 4em 3em;
+      color: #dfdbcd;
    }
 
    #kursbottom{
-     display: block;
+     position: relative;
+     top: 7em;
+     display: grid;
+     height: 100vh;
+     grid-template-columns: 100%;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     justify-content: center;     
+     border-top: #f0f0f0 1px solid;
+     padding-top: 6em;
+   }
+   .kursdiv{
+     margin-bottom: 4em;
+   }
+   .kursdiv h2{
+     color: #75e7ba;
+     font-size: 180%;
+     margin-top: 0.5em;
    }
 
-   @media screen and (min-width:300px){
 
-    #navmobile{
-      display: block;
-      top: 0;
-      right: 0;
-      z-index: 3;    
-      position: fixed;    
-      }
-      .nav-links{
-      position: absolute;
-      right: 0px;
-      height: 96vh;
-      top:14px;
-      background-color: #010202;
-      display: flex;
-      flex-direction: column;
-      width: 120%;
-      transform: translateX(125%);
-      transition: transform 0.5s ease-in;
-      overflow-y: hidden;
-      z-index: 4;
-      }
-    .nav-links li{
-      opacity: 0;
-    }
-    .burger{
-      display: block;
-      margin: 13px;
-     }
-    }
+
+  
     @media screen and (min-width:430px){
       .überbig{
         position: absolute;
-        top: 14em;
+        top: 10em;
       }
-      #navmobile{
-        position: absolute;
-        top: 0;
-      }    
       #überpic{
         width: 40%;
       }
       .kurstop{
-        top: 14em;
+        top: 10em;
       }     
+    }
+    @media screen and (min-width:720px){
+      #start{
+        width: 50%;
+      }
+      #start h1{
+        font-size: 220%;
+      }
+      #start p{
+        font-size: 150%;         
+      }
+      .inner button{
+        height: 7vh;
+        width: 20vh;
+        top: 30em;
+      }
+      #txtbox{
+        margin-left: 12%;
+        height: 20vh;
+        width: 75%;
+      }
     }
 
     @media screen and (min-width:1024px){
@@ -308,22 +274,91 @@ Example for easy mobile skeleton with styles*/
         display: grid;
         grid-template-columns: repeat(2,50%); 
       }
-       #überh2{
+      #überh2{
         text-align: center;       
        }
-       #überpic{
+      #überpic{
          position: absolute;
          width: 25%;
          margin-left: 40%;
          top: 20em;
        }
-       #übertxt{
-        font-size:110%;
-    }
-  }
+      #übertxt{
+        font-size:130%;
+      }
+      #section2{
+        position: relative;
+        z-index: 3;
+        width: 100%;
+      }
+      #bigdiv{
+        position: relative;
+        z-index: 2;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+      }
+      #homemiddlediv{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 40px 0px;
+        
+      }
+      .homediv{
+        flex-basis: 33.33333%;
+      }
+      .picture{
+        width: 250px;
+        height: 333px;
+      }
+      #txtbox{
+        height: 27vh;
+      }
+      #txtboxchild h2{
+        color: #75e7ba;
+        margin-top: 11vh;
+      }
+      #kurscontenttxt{
+        font-size: 130%;
+      }
+      
+     
+     
   @media screen and (min-width:1500px){
     #überpic{
       width: 20%;
+    }
+    #start{
+      width: 40%;
+      margin-left: 15%;
+    }
+    .inner button{
+      margin-left: 17%;
+      font-size: x-large;
+    }
+    .inner button{
+      top: 15em;
+    }
+    .picture{
+      width: 336px;
+      height: 448px;
+    }
+    #homemiddlediv{
+      margin: 50px 200px 0px;
+    }
+    #txtbox{
+      width: 35%;
+      margin-left: 32.5%;
+    }
+    #txtboxchild p{
+      color:#dfdbcd ;
+      margin: 30px 20px 0 20px;
+    }
+    #kurspic{
+      width: 50%;
+    }
+    .kursimage{
+      width: 25%;
     }
   }
   @media screen and (min-width:1920px){
@@ -342,6 +377,49 @@ Example for easy mobile skeleton with styles*/
     #überh2{
       font-size: 250%;
     }  
+    #start{
+      width: 30%;
+      margin-left: 15%;
+    }
+    #start h1{
+      font-size: 350%;
+    }
+    #start p{
+      font-size: 180%;         
+    }
+    .inner button{
+      top: 20em;
+    }
+    #homemiddlediv{
+      margin: 50px 400px 0px;
+    }
+    .h2{
+      font-size: 250%;
+    }
+    .p{
+      font-size: 180%;
+    }
+    #kursbottom{
+      position: relative;
+      top: 7em;
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 100%;
+      justify-content: center;     
+      border-top: #f0f0f0 1px solid;
+      padding-top: 10em;
+    }
+    .kursimage{
+      width: 75%;
+    }
+    #kurscontenth2{
+      font-size: 250%;
+    }
+    #kurscontenttxt{
+       font-size: x-large;
+    }
+   
   }
 
 
@@ -387,7 +465,7 @@ Example for easy mobile skeleton with styles*/
 
 /* 
 Styles burger */
-  .nav-active{
+  /* .nav-active{
     transform: translateX(25%);
    }  
 
@@ -410,4 +488,4 @@ Styles burger */
   }
   .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
-  }
+  } */
