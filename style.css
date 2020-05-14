@@ -284,7 +284,7 @@ Example for easy mobile skeleton with styles*/
          top: 20em;
        }
       #übertxt{
-        font-size:110%;
+        font-size:130%;
       }
       #section2{
         position: relative;
@@ -318,6 +318,10 @@ Example for easy mobile skeleton with styles*/
         color: #75e7ba;
         margin-top: 11vh;
       }
+      #kurscontenttxt{
+        font-size: 130%;
+      }
+      
      
      
   @media screen and (min-width:1500px){
