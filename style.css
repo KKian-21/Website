@@ -54,7 +54,7 @@
     right: 0;
   }
   #navbig ul{
-    display: flex;
+    display: none;
     margin-right: 7vw;
     margin-top: 1vw;
    
@@ -113,15 +113,21 @@
  
 
   /* Navigation Styles mobile */
-  /* #navmobile{
-    display: hidden;
+  #navmobile{
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #000000;
     width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+
   }
   .nav-links{
-    display: none;
+    display: hidden;
     justify-content: space-around;
     width: 40%;
     margin: 30px;
@@ -135,10 +141,13 @@
     letter-spacing: 2px;
     font-weight: bold;
     font-size:24px;
+    display: none;
   }
   .burger{
-    display: none;
-    float: right;
+    display: block;
+    left: 90%;
+    position: absolute;
+    top: 0.5em;
   }
   .burger div{
     width: 25px;
@@ -171,16 +180,6 @@
     margin:2em 2em 4em 3em;
     z-index: 2;
     color: #dad8d1;
-   }
-   #überbkr{
-     position: absolute;
-     top: 5em;
-     right: -40em;
-     width: 150vh;
-     height: 150vh;
-     border-radius: 50%;
-     background-color: #7feec1;
-
    }
    #überpic{
      position: relative;
@@ -265,6 +264,18 @@ Example for easy mobile skeleton with styles*/
         height: 20vh;
         width: 75%;
       }
+      #navbig ul{
+        display: flex;
+      }
+      .burger{
+        display: none;
+      }
+      #navmobile{
+        display: none;
+      }
+      .nav-links{
+        display: none;
+      }
     }
 
     @media screen and (min-width:1024px){
@@ -321,7 +332,7 @@ Example for easy mobile skeleton with styles*/
       #kurscontenttxt{
         font-size: 130%;
       }
-      
+    } 
      
      
   @media screen and (min-width:1500px){
@@ -355,11 +366,14 @@ Example for easy mobile skeleton with styles*/
       margin: 30px 20px 0 20px;
     }
     #kurspic{
-      width: 50%;
+      width: 40%;
     }
     .kursimage{
       width: 25%;
     }
+    #kurscontenttxt {
+      margin: 2em 15% 4em 15%;
+  }
   }
   @media screen and (min-width:1920px){
     #überbig{
@@ -401,7 +415,7 @@ Example for easy mobile skeleton with styles*/
     }
     #kursbottom{
       position: relative;
-      top: 7em;
+      top: 14em;
       display: grid;
       height: 100vh;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -411,7 +425,7 @@ Example for easy mobile skeleton with styles*/
       padding-top: 10em;
     }
     .kursimage{
-      width: 75%;
+      width: 60%;
     }
     #kurscontenth2{
       font-size: 250%;
@@ -424,16 +438,12 @@ Example for easy mobile skeleton with styles*/
 
 
 
-  .überbig,.inner{
+  .überbig,.inner,.kurstop{
     animation: fadeIn 2s forwards;
   }
   #überbkr{
     animation: fadeBkr 3s forwards;
   }
-
-
-
-
 
   @keyframes fadeIn{
     from{
@@ -445,6 +455,7 @@ Example for easy mobile skeleton with styles*/
       transform: translateY(0) ;
     }
   }
+
   @keyframes fadeBkr{
     from{
       opacity: 1;
@@ -463,8 +474,8 @@ Example for easy mobile skeleton with styles*/
 
 
 
-/* 
-Styles burger */
+
+/* Styles burger  */
   /* .nav-active{
     transform: translateX(25%);
    }  
@@ -488,4 +499,4 @@ Styles burger */
   }
   .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
-  } */
+  }*/
