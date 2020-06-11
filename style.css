@@ -450,6 +450,17 @@ Example for easy mobile skeleton with styles*/
     font-size: x-large;
   }
 }
+@media screen and (min-width: 1920px) {
+  #start {
+    top: 51em;
+  }
+  #start h1 {
+    font-size: 420%;
+  }
+  .inner button {
+    top: 44em;
+  }
+}
 
 .überbig,
 .inner,
