@@ -11,20 +11,21 @@ html {
   width: 100%;
   height: 100%;
   position: relative;
-  background: url(Zlatan1.png);
+  background: url(schuhe2.jpg);
   background-size: cover;
-  background-position: 51%, 75%;
+  background-position: 51%, 0%;
+  opacity: 0.7;
 }
 #start {
   position: absolute;
-  top: 10em;
-  margin-left: 3em;
+  top: 32em;
+  margin-left: 4em;
 }
 #start h1 {
   color: #75e7ba;
 }
 #start p {
-  color: #dfdbce;
+  color: #ffffff;
   margin: 1em 2em 1em -0.5em;
 }
 .inner button {
@@ -35,7 +36,7 @@ html {
   width: 8em;
   height: 3em;
   position: relative;
-  top: 22em;
+  top: 50em;
 }
 .inner button:hover {
   background-color: #6cd4ab;
@@ -165,7 +166,7 @@ a:hover {
                           */
 .überbig {
   position: absolute;
-  top: 4em;
+  top: 5em;
   width: 100%;
   z-index: 2;
 }
@@ -193,7 +194,7 @@ Styles kurse
 Example for easy mobile skeleton with styles*/
 .kurstop {
   position: relative;
-  top: 4em;
+  top: 5em;
   width: 100%;
   z-index: 2;
 }
@@ -268,7 +269,7 @@ Example for easy mobile skeleton with styles*/
   .inner button {
     height: 7vh;
     width: 20vh;
-    top: 30em;
+    top: 59em;
   }
   #txtbox {
     margin-left: 12%;
@@ -302,7 +303,7 @@ Example for easy mobile skeleton with styles*/
     position: absolute;
     width: 25%;
     margin-left: 40%;
-    top: 20em;
+    top: 15em;
   }
   #übertxt {
     font-size: 130%;
@@ -341,6 +342,12 @@ Example for easy mobile skeleton with styles*/
   #kurscontenttxt {
     font-size: 130%;
   }
+  #start {
+    top: 27em;
+  }
+  .inner button {
+    top: 48em;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -350,13 +357,12 @@ Example for easy mobile skeleton with styles*/
   #start {
     width: 40%;
     margin-left: 15%;
+    top: 35em;
   }
   .inner button {
     margin-left: 17%;
     font-size: x-large;
-  }
-  .inner button {
-    top: 15em;
+    top: 30em;
   }
   .picture {
     width: 336px;
@@ -402,15 +408,17 @@ Example for easy mobile skeleton with styles*/
   #start {
     width: 30%;
     margin-left: 15%;
+    top: 39em;
   }
   #start h1 {
-    font-size: 350%;
+    font-size: 400%;
   }
   #start p {
     font-size: 180%;
+    margin-top: 0em;
   }
   .inner button {
-    top: 20em;
+    top: 37em;
   }
   #homemiddlediv {
     margin: 50px 400px 0px;
