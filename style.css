@@ -452,13 +452,13 @@ Example for easy mobile skeleton with styles*/
 }
 @media screen and (min-width: 1920px) {
   #start {
-    top: 51em;
+    top: 40em;
   }
   #start h1 {
-    font-size: 420%;
+    font-size: 400%;
   }
   .inner button {
-    top: 44em;
+    top: 37em;
   }
 }
 
