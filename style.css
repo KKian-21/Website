@@ -11,32 +11,34 @@ html {
   width: 100%;
   height: 100%;
   position: relative;
-  background: url(schuhe2.jpg);
+  background: url(schuhe1.0.jpg);
   background-size: cover;
-  background-position: 51%, 0%;
-  opacity: 0.7;
+  background-position: 58%, 0%;
+  opacity: 0.5;
 }
 #start {
   position: absolute;
-  top: 32em;
+  top: 22em;
   margin-left: 4em;
 }
 #start h1 {
   color: #75e7ba;
+  font-size: 190%;
 }
 #start p {
   color: #ffffff;
   margin: 1em 2em 1em -0.5em;
+  font-size: 120%;
 }
 .inner button {
   margin: 4em 0 0 4em;
   background-color: #75e7ba;
   border-radius: 8px;
   border-style: none;
-  width: 8em;
-  height: 3em;
+  width: 10em;
+  height: 4em;
   position: relative;
-  top: 50em;
+  top: 42em;
 }
 .inner button:hover {
   background-color: #6cd4ab;
@@ -259,9 +261,11 @@ Example for easy mobile skeleton with styles*/
 @media screen and (min-width: 720px) {
   #start {
     width: 50%;
+    top: 19em;
+    margin-left: 5em;
   }
   #start h1 {
-    font-size: 220%;
+    font-size: 250%;
   }
   #start p {
     font-size: 150%;
@@ -269,7 +273,7 @@ Example for easy mobile skeleton with styles*/
   .inner button {
     height: 7vh;
     width: 20vh;
-    top: 59em;
+    top: 43em;
   }
   #txtbox {
     margin-left: 12%;
@@ -291,6 +295,23 @@ Example for easy mobile skeleton with styles*/
 }
 
 @media screen and (min-width: 1024px) {
+  #start {
+    top: 15em;
+  }
+  .inner button {
+    top: 35em;
+  }
+  #start h1 {
+    font-size: 350%;
+  }
+  #start p {
+    font-size: 200%;
+  }
+  .inner button {
+    height: 9vh;
+    width: 25vh;
+    top: 45em;
+  }
   .überbig {
     top: 15em;
     display: grid;
@@ -341,12 +362,6 @@ Example for easy mobile skeleton with styles*/
   }
   #kurscontenttxt {
     font-size: 130%;
-  }
-  #start {
-    top: 27em;
-  }
-  .inner button {
-    top: 48em;
   }
 }
 
@@ -407,18 +422,19 @@ Example for easy mobile skeleton with styles*/
   }
   #start {
     width: 30%;
-    margin-left: 15%;
-    top: 39em;
+    margin-left: 9%;
+    top: 22em;
   }
   #start h1 {
-    font-size: 400%;
+    font-size: 390%;
   }
   #start p {
-    font-size: 180%;
+    font-size: 200%;
     margin-top: 0em;
   }
   .inner button {
-    top: 37em;
+    top: 20em;
+    margin-left: 10%;
   }
   #homemiddlediv {
     margin: 50px 400px 0px;
@@ -444,21 +460,10 @@ Example for easy mobile skeleton with styles*/
     width: 60%;
   }
   #kurscontenth2 {
-    font-size: 250%;
+    font-size: 270%;
   }
   #kurscontenttxt {
     font-size: x-large;
-  }
-}
-@media screen and (min-width: 1920px) {
-  #start {
-    top: 40em;
-  }
-  #start h1 {
-    font-size: 400%;
-  }
-  .inner button {
-    top: 37em;
   }
 }
 
