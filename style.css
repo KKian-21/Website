@@ -38,7 +38,7 @@ html {
   width: 10em;
   height: 4em;
   position: relative;
-  top: 42em;
+  top: 46em;
 }
 .inner button:hover {
   background-color: #6cd4ab;
@@ -259,9 +259,11 @@ Example for easy mobile skeleton with styles*/
   }
 }
 @media screen and (min-width: 720px) {
+  /* Style Tablet Hochkant*/
+
   #start {
     width: 50%;
-    top: 19em;
+    top: 22em;
     margin-left: 5em;
   }
   #start h1 {
@@ -273,7 +275,6 @@ Example for easy mobile skeleton with styles*/
   .inner button {
     height: 7vh;
     width: 20vh;
-    top: 43em;
   }
   #txtbox {
     margin-left: 12%;
@@ -295,6 +296,8 @@ Example for easy mobile skeleton with styles*/
 }
 
 @media screen and (min-width: 1024px) {
+  /* Style Tablet Gedreht Horizontal*/
+
   #start {
     top: 15em;
   }
@@ -324,7 +327,6 @@ Example for easy mobile skeleton with styles*/
     position: absolute;
     width: 25%;
     margin-left: 40%;
-    top: 15em;
   }
   #übertxt {
     font-size: 130%;
@@ -372,12 +374,12 @@ Example for easy mobile skeleton with styles*/
   #start {
     width: 40%;
     margin-left: 15%;
-    top: 35em;
+    top: 21em;
   }
   .inner button {
     margin-left: 17%;
     font-size: x-large;
-    top: 30em;
+    top: 28em;
   }
   .picture {
     width: 336px;
@@ -433,7 +435,7 @@ Example for easy mobile skeleton with styles*/
     margin-top: 0em;
   }
   .inner button {
-    top: 20em;
+    top: 28em;
     margin-left: 10%;
   }
   #homemiddlediv {
@@ -464,6 +466,14 @@ Example for easy mobile skeleton with styles*/
   }
   #kurscontenttxt {
     font-size: x-large;
+  }
+}
+@media screen and (min-width: 2500px) {
+  #start {
+    top: 29em;
+  }
+  .inner button {
+    top: 32em;
   }
 }
 
