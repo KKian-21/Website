@@ -1,491 +1,535 @@
-  *{
-    margin: 0;
-    padding: 0;
-    font-family: Rubik,sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rubik, sans-serif;
+}
+html {
+  overflow-x: hidden;
+  background-color: black;
+}
+.intro {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(schuhe1.0.jpg);
+  background-size: cover;
+  background-position: 58%, 0%;
+  opacity: 0.5;
+}
+#start {
+  position: absolute;
+  top: 22em;
+  margin-left: 4em;
+}
+#start h1 {
+  color: #75e7ba;
+  font-size: 190%;
+}
+#start p {
+  color: #ffffff;
+  margin: 1em 2em 1em -0.5em;
+  font-size: 120%;
+}
+.inner button {
+  margin: 4em 0 0 4em;
+  background-color: #75e7ba;
+  border-radius: 8px;
+  border-style: none;
+  width: 10em;
+  height: 4em;
+  position: relative;
+  top: 46em;
+}
+.inner button:hover {
+  background-color: #6cd4ab;
+}
 
+/* Navigation Bar */
+#navbig {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  right: 0;
+}
+#navbig ul {
+  display: none;
+  margin-right: 7vw;
+  margin-top: 1vw;
+}
+#navbig ul li {
+  list-style: none;
+}
+#navbig ul li a {
+  text-decoration: none;
+  color: #dfdbcd;
+  margin-left: 5vw;
+  font-size: 150%;
+}
+#navbig ul li a:hover {
+  text-decoration: underline;
+}
 
-  }
-  html{
-    overflow-x: hidden;
-    background-color: black;
-  }
-  .intro{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: url(Zlatan1.png);
-    background-size: cover;
-    background-position: 51%, 75%;
+/* under Home */
+#bigdiv {
+  text-align: center;
+  position: relative;
+  top: 5em;
+}
+#bigdiv h2 {
+  color: #75e7ba;
+  margin: 1em 1em;
+}
+#bigdiv p {
+  color: #dfdbcd;
+  margin-bottom: 3.5em;
+}
+#txtbox {
+  position: relative;
+  top: 15vh;
+  margin-left: 6%;
+  height: 20%;
+  width: 85%;
+  border: #f0f0f0 4px solid;
+  margin-bottom: 20px;
+}
+#txtboxchild {
+  text-align: center;
+}
+#txtboxchild h2 {
+  color: #75e7ba;
+  margin-top: 5vh;
+}
+#txtboxchild p {
+  color: #dfdbcd;
+  margin: 7px 5px 0 5px;
+}
 
-
-  }
-  #start{
-    position: absolute;
-    top: 10em;
-    margin-left: 3em;
-  }
-  #start h1{
-    color:#75e7ba;
-
-  }
-  #start p{
-    color: #dfdbce;
-    margin: 1em 2em 1em -0.5em;
-  }
-  .inner button{
-    margin: 4em 0 0 4em;
-    background-color:#75e7ba;
-    border-radius: 8px;
-    border-style: none;
-    width: 8em;
-    height: 3em;
-    position: relative;
-    top: 22em;
-  }
-  .inner button:hover{
-    background-color: #6cd4ab;
-  }
-
-  /* Navigation Bar */
-  #navbig{
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    right: 0;
-  }
-  #navbig ul{
-    display: flex;
-    margin-right: 7vw;
-    margin-top: 1vw;
-   
-  }
-  #navbig ul li{
-    list-style: none;
-    
-  }
-  #navbig ul li a{
-    text-decoration: none;
-    color: #dfdbcd;
-    margin-left: 5vw;
-    font-size: 150%;
-  }
-  #navbig ul li a:hover{
-    text-decoration: underline
-  }
-  #navmobile{
-    display: none;
-  }
-
-  /* under Home */
-  #bigdiv{
-    text-align: center;
-    position: relative;
-    top:5em;
-  }
-  #bigdiv h2{
-    color: #75e7ba;
-    margin: 1em 1em;
-  }
-  #bigdiv p{
-    color: #dfdbcd;
-    margin-bottom: 3.5em;
-  }
-  #txtbox{
-    position: relative;
-    top: 15vh;
-    margin-left: 6%;
-    height: 20%;
-    width: 85%;
-    border: #f0f0f0 4px solid;
-    margin-bottom: 20px;   
-  }
-  #txtboxchild{
-    text-align: center;
-  }
-  #txtboxchild h2{
-    color: #75e7ba;
-    margin-top: 5vh;
-  }
-  #txtboxchild p{
-    color:#dfdbcd ;
-    margin: 7px 5px 0 5px;
-  }
- 
-
-  /* Navigation Styles mobile */
-  /* #navmobile{
-    display: hidden;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #000000;
-    width: 100%;
-  }
-  .nav-links{
-    display: none;
-    justify-content: space-around;
-    width: 40%;
-    margin: 30px;
-  }
-  .nav-links li{
-    list-style: none;
-  }
-  .nav-links a{
-    color:#e3e0e0;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size:24px;
-  }
-  .burger{
-    display: none;
-    float: right;
-  }
-  .burger div{
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color:#e3e0e0;
-    transition: all 0.3s ease;
-  }
-
-  
+/* Navigation Styles mobile */
+#navmobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 7vh;
+  position: absolute;
+  z-index: 4;
+  top: 1vh;
+  border-bottom: 0.5px solid white;
+}
+.nav-links {
+  position: absolute;
+  height: 100vh;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  transition: transform 1.5s ease-in;
+  top: -100vh;
+  z-index: 5;
+  background-color: black;
+  padding-left: 15%;
+  border: black;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: #d2ddda;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 5;
+  font-size: x-large;
+}
+.burger {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  z-index: 5;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #e3e0e0;
+  transition: all 0.5s ease;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 /* Extra Styles Über Uns 
                           */
-  .überbig{
-    position: absolute;
-    top: 4em;
-    width: 100%;
-    z-index: 2;
-  }
-  .übersmall{
-    text-align: center;
-  }
-   #überh2{   
-    font-size: 180%;  
-    color: #75e7ba;   
-   }
-    #übertxt{
-    position: relative;
-    font-size: smaller;
-    margin:2em 2em 4em 3em;
-    z-index: 2;
-    color: #dad8d1;
-   }
-   #überbkr{
-     position: absolute;
-     top: 5em;
-     right: -40em;
-     width: 150vh;
-     height: 150vh;
-     border-radius: 50%;
-     background-color: #7feec1;
-
-   }
-   #überpic{
-     position: relative;
-     z-index: 2;
-   }
-
- 
-   /*   
-Styles kurse 
-Example for easy mobile skeleton with styles*/
-   .kurstop{
-     position: relative;
-     top: 4em;
-     width: 100%;
-     z-index: 2;
-   }
-   .kurstopcontent{
-     text-align: center;
-   }
-   #kurscontenth2{
-     font-size: 180%;
-     color: #75e7ba;
-   }
-   #kurscontenttxt{
-      font-size: smaller;
-      margin: 2em 2em 4em 3em;
-      color: #dfdbcd;
-   }
-
-   #kursbottom{
-     position: relative;
-     top: 7em;
-     display: grid;
-     height: 100vh;
-     grid-template-columns: 100%;
-     grid-template-rows: 1fr 1fr 1fr 1fr;
-     justify-content: center;     
-     border-top: #f0f0f0 1px solid;
-     padding-top: 6em;
-   }
-   .kursdiv{
-     margin-bottom: 4em;
-   }
-   .kursdiv h2{
-     color: #75e7ba;
-     font-size: 180%;
-     margin-top: 0.5em;
-   }
-
-
-
-  
-    @media screen and (min-width:430px){
-      .überbig{
-        position: absolute;
-        top: 10em;
-      }
-      #überpic{
-        width: 40%;
-      }
-      .kurstop{
-        top: 10em;
-      }     
-    }
-    @media screen and (min-width:720px){
-      #start{
-        width: 50%;
-      }
-      #start h1{
-        font-size: 220%;
-      }
-      #start p{
-        font-size: 150%;         
-      }
-      .inner button{
-        height: 7vh;
-        width: 20vh;
-        top: 30em;
-      }
-      #txtbox{
-        margin-left: 12%;
-        height: 20vh;
-        width: 75%;
-      }
-    }
-
-    @media screen and (min-width:1024px){
-     
-      .überbig{
-        top: 15em;
-        display: grid;
-        grid-template-columns: repeat(2,50%); 
-      }
-      #überh2{
-        text-align: center;       
-       }
-      #überpic{
-         position: absolute;
-         width: 25%;
-         margin-left: 40%;
-         top: 20em;
-       }
-      #übertxt{
-        font-size:130%;
-      }
-      #section2{
-        position: relative;
-        z-index: 3;
-        width: 100%;
-      }
-      #bigdiv{
-        position: relative;
-        z-index: 2;
-        box-sizing: border-box;
-        width: 100%;
-        margin: 0 auto;
-      }
-      #homemiddlediv{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 50px 40px 0px;
-        
-      }
-      .homediv{
-        flex-basis: 33.33333%;
-      }
-      .picture{
-        width: 250px;
-        height: 333px;
-      }
-      #txtbox{
-        height: 27vh;
-      }
-      #txtboxchild h2{
-        color: #75e7ba;
-        margin-top: 11vh;
-      }
-      #kurscontenttxt{
-        font-size: 130%;
-      }
-      
-     
-     
-  @media screen and (min-width:1500px){
-    #überpic{
-      width: 20%;
-    }
-    #start{
-      width: 40%;
-      margin-left: 15%;
-    }
-    .inner button{
-      margin-left: 17%;
-      font-size: x-large;
-    }
-    .inner button{
-      top: 15em;
-    }
-    .picture{
-      width: 336px;
-      height: 448px;
-    }
-    #homemiddlediv{
-      margin: 50px 200px 0px;
-    }
-    #txtbox{
-      width: 35%;
-      margin-left: 32.5%;
-    }
-    #txtboxchild p{
-      color:#dfdbcd ;
-      margin: 30px 20px 0 20px;
-    }
-    #kurspic{
-      width: 50%;
-    }
-    .kursimage{
-      width: 25%;
-    }
-  }
-  @media screen and (min-width:1920px){
-    #überbig{
-      top: 20em;
-    }
-    #überpic{
-      width: 15%;
-      grid-template-columns: repeat(2,40%);
-      top: 15em;
-      margin-left: 45%;
-    }
-    #übertxt{
-      font-size: x-large;
-    }
-    #überh2{
-      font-size: 250%;
-    }  
-    #start{
-      width: 30%;
-      margin-left: 15%;
-    }
-    #start h1{
-      font-size: 350%;
-    }
-    #start p{
-      font-size: 180%;         
-    }
-    .inner button{
-      top: 20em;
-    }
-    #homemiddlediv{
-      margin: 50px 400px 0px;
-    }
-    .h2{
-      font-size: 250%;
-    }
-    .p{
-      font-size: 180%;
-    }
-    #kursbottom{
-      position: relative;
-      top: 7em;
-      display: grid;
-      height: 100vh;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 100%;
-      justify-content: center;     
-      border-top: #f0f0f0 1px solid;
-      padding-top: 10em;
-    }
-    .kursimage{
-      width: 75%;
-    }
-    #kurscontenth2{
-      font-size: 250%;
-    }
-    #kurscontenttxt{
-       font-size: x-large;
-    }
-   
-  }
-
-
-
-  .überbig,.inner{
-    animation: fadeIn 2s forwards;
-  }
-  #überbkr{
-    animation: fadeBkr 3s forwards;
-  }
-
-
-
-
-
-  @keyframes fadeIn{
-    from{
-      opacity: 0;
-      transform: translateY(-3em) ;
-    }
-    to{
-      opacity: 1;
-      transform: translateY(0) ;
-    }
-  }
-  @keyframes fadeBkr{
-    from{
-      opacity: 1;
-      transform: translateY(5em) ;
-    }
-    to{
-      opacity: 0.8;
-      transform: translateY(0) ;
-    }
-  }
-
-
-
-
-
-
-
-
-/* 
-Styles burger */
-  /* .nav-active{
-    transform: translateX(25%);
-   }  
-
-@keyframes navLinkFade{
-  from{
-    opacity:0;
-    transform:translateX(40px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-    }
+.überbig {
+  position: absolute;
+  top: 5em;
+  width: 100%;
+  z-index: 2;
+}
+.übersmall {
+  text-align: center;
+}
+#überh2 {
+  font-size: 180%;
+  color: #75e7ba;
+}
+#übertxt {
+  position: relative;
+  font-size: smaller;
+  margin: 2em 2em 4em 3em;
+  z-index: 2;
+  color: #dad8d1;
+}
+#überpic {
+  position: relative;
+  z-index: 2;
 }
 
-  .toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+/*   
+Styles kurse 
+Example for easy mobile skeleton with styles*/
+.kurstop {
+  position: relative;
+  top: 5em;
+  width: 100%;
+  z-index: 2;
+}
+.kurstopcontent {
+  text-align: center;
+}
+#kurscontenth2 {
+  font-size: 180%;
+  color: #75e7ba;
+}
+#kurscontenttxt {
+  font-size: smaller;
+  margin: 2em 2em 4em 3em;
+  color: #dfdbcd;
+}
+
+#kursbottom {
+  position: relative;
+  top: 18em;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  border-top: #f0f0f0 1px solid;
+  padding-top: 6em;
+}
+.kursdiv {
+  margin-bottom: 4em;
+}
+.kursdiv h2 {
+  color: #75e7ba;
+  font-size: 180%;
+  margin-top: 0.5em;
+}
+
+/* Style footer */
+.footer {
+  position: relative;
+  top: 25vh;
+  height: 10em;
+  width: 100%;
+  border-top: #f0f0f0 0.5px solid;
+}
+#footercontent {
+  color: #f0f0f0;
+  margin: 3em 0 1.5em 2em;
+}
+
+@media screen and (min-width: 430px) {
+  .überbig {
+    position: absolute;
+    top: 10em;
   }
-  .toggle .line2{
+  #überpic {
+    width: 40%;
+  }
+  .kurstop {
+    top: 10em;
+  }
+}
+@media screen and (min-width: 720px) {
+  /* Style Tablet Hochkant*/
+
+  #start {
+    width: 50%;
+    top: 22em;
+    margin-left: 5em;
+  }
+  #start h1 {
+    font-size: 250%;
+  }
+  #start p {
+    font-size: 150%;
+  }
+  .inner button {
+    height: 7vh;
+    width: 20vh;
+  }
+  #txtbox {
+    margin-left: 12%;
+    height: 20vh;
+    width: 75%;
+  }
+  #navbig ul {
+    display: flex;
+  }
+  .burger {
+    display: none;
+  }
+  #navmobile {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Style Tablet Gedreht Horizontal*/
+
+  #start {
+    top: 15em;
+  }
+  .inner button {
+    top: 35em;
+  }
+  #start h1 {
+    font-size: 350%;
+  }
+  #start p {
+    font-size: 200%;
+  }
+  .inner button {
+    height: 9vh;
+    width: 25vh;
+    top: 45em;
+  }
+  .überbig {
+    top: 15em;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  #überh2 {
+    text-align: center;
+  }
+  #überpic {
+    position: absolute;
+    width: 25%;
+    margin-left: 40%;
+  }
+  #übertxt {
+    font-size: 130%;
+  }
+  #section2 {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+  }
+  #bigdiv {
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #homemiddlediv {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 40px 0px;
+  }
+  .homediv {
+    flex-basis: 33.33333%;
+  }
+  .picture {
+    width: 250px;
+    height: 333px;
+  }
+  #txtbox {
+    height: 27vh;
+  }
+  #txtboxchild h2 {
+    color: #75e7ba;
+    margin-top: 11vh;
+  }
+  #kurscontenttxt {
+    font-size: 130%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #überpic {
+    width: 20%;
+  }
+  #start {
+    width: 40%;
+    margin-left: 15%;
+    top: 21em;
+  }
+  .inner button {
+    margin-left: 17%;
+    font-size: x-large;
+    top: 28em;
+  }
+  .picture {
+    width: 336px;
+    height: 448px;
+  }
+  #homemiddlediv {
+    margin: 50px 200px 0px;
+  }
+  #txtbox {
+    width: 35%;
+    margin-left: 32.5%;
+  }
+  #txtboxchild p {
+    color: #dfdbcd;
+    margin: 30px 20px 0 20px;
+  }
+  #kurspic {
+    width: 40%;
+  }
+  .kursimage {
+    width: 25%;
+  }
+  #kurscontenttxt {
+    margin: 2em 20% 4em 20%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #überbig {
+    top: 20em;
+  }
+  #überpic {
+    width: 15%;
+    grid-template-columns: repeat(2, 40%);
+    top: 15em;
+    margin-left: 45%;
+  }
+  #übertxt {
+    font-size: x-large;
+  }
+  #überh2 {
+    font-size: 250%;
+  }
+  #start {
+    width: 30%;
+    margin-left: 9%;
+    top: 22em;
+  }
+  #start h1 {
+    font-size: 390%;
+  }
+  #start p {
+    font-size: 200%;
+    margin-top: 0em;
+  }
+  .inner button {
+    top: 28em;
+    margin-left: 10%;
+  }
+  #homemiddlediv {
+    margin: 50px 400px 0px;
+  }
+  .h2 {
+    font-size: 250%;
+  }
+  .p {
+    font-size: 180%;
+  }
+  #kursbottom {
+    position: relative;
+    top: 14em;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-content: center;
+    border-top: #f0f0f0 1px solid;
+    padding-top: 10em;
+  }
+  .kursimage {
+    width: 60%;
+  }
+  #kurscontenth2 {
+    font-size: 270%;
+  }
+  #kurscontenttxt {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 2500px) {
+  #start {
+    top: 29em;
+  }
+  .inner button {
+    top: 32em;
+  }
+}
+
+.überbig,
+.inner,
+.kurstop {
+  animation: fadeIn 2s forwards;
+}
+#überbkr {
+  animation: fadeBkr 3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
+    transform: translateY(-3em);
   }
-  .toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-  } */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeBkr {
+  from {
+    opacity: 1;
+    transform: translateY(5em);
+  }
+  to {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+/* Animation CSS Navigation */
+.nav-active {
+  transform: translateY(100%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
